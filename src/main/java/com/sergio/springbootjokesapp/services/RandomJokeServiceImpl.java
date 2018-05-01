@@ -9,8 +9,8 @@ public class RandomJokeServiceImpl implements RandomJokeService {
 
 	private final ChuckNorrisQuotes chuck;
 
-	public RandomJokeServiceImpl() {
-		this.chuck = new ChuckNorrisQuotes();
+	public RandomJokeServiceImpl(ChuckNorrisQuotes chuck) {
+		this.chuck = chuck;
 	}
 
 	@Override
